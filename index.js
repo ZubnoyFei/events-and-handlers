@@ -41,7 +41,7 @@ const deleteElement = (e) => {
 // overlay.addEventListener('click', deleteElement);
 
 btns.forEach(btn => {
-   btn.addEventListener('click', deleteElement);
+   btn.addEventListener('click', deleteElement, {once: true}/*означает, что код будет выполняться только один раз*/);
 })
 
 
